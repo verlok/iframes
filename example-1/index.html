@@ -3,9 +3,50 @@
     <head>
         <meta charset="utf-8">
         <title>Example 1</title>
+        <link href="../container.css" rel="stylesheet" />
     </head>
     <body>
-        <h1>Example 1</h1>
+        <h1>Form outside the iframe</h1>
+        <form class="payment" action="">
+            <div class="row">
+                <label for="name">Cardholder name</label>
+                <div class="field"><input type="text" id="name"></div>
+            </div>
+            <div class="row">
+                <label for="surname">Cardholder surname</label>
+                <div class="field"><input type="text" id="surname"></div>
+            </div>
+            <div class="row">
+                <label for="value03">Card number</label>
+                <div class="field"><input type="text" id="value03"></div>
+            </div>
+            <div class="row">
+                <label>Card type</label>
+                <div class="field field--radios">
+                    <span><input type="radio" name="type" id="type01"><label for="type01">Type 01</label></span>
+                    <span><input type="radio" name="type" id="type02"><label for="type02">Type 02</label></span>
+                    <span><input type="radio" name="type" id="type03"><label for="type03">Type 03</label></span>
+                    <span><input type="radio" name="type" id="type04"><label for="type04">Type 04</label></span>
+                </div>
+            </div>
+            <div class="row">
+                <label for="value05">Value 05</label>
+                <div class="field"><input type="text" id="value05"></div>
+            </div>
+            <div class="row">
+                <label for="value06">Value 06</label>
+                <div class="field"><input type="text" id="value06"></div>
+            </div>
+            <div class="row row--buttons">
+                <button type="submit" name="submit">Pay now</button>
+            </div>
+        </form>
+        <h1>Form inside the iframe</h1>
         <iframe src="../iframe.html" width="100%" height="400" frameborder="0"></iframe>
+        <h1>Difference</h1>
+        <ul>
+            <li>Only the background color and the font family are maintained</li>
+            <li>All other CSS rules are lost</li>
+        </ul>
     </body>
 </html>

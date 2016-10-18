@@ -1,0 +1,30 @@
+body {
+    background-color: #EEE;
+    font-family: georgia;
+    font-size: 12px;
+}
+
+.row {
+    margin: 10px 0;
+}
+
+input {
+    padding: .5em;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+}
+
+.row {
+    display: flex;
+}
+
+label {
+    width: 160px;
+    text-align: right;
+    padding-right: 1em;
+}
+
+.field--radios span {
+    display: block;
+    margin: .5em 0;
+}
