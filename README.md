@@ -23,6 +23,7 @@ Native
 - - no guaranteed support for iframe in next versions of embedded browsers
 - - double development and maintenance for webpage embedded iframe and WebView embedded in native app
 - - harder to manage iframe failures due to connectivity issues
+- -	3rd party payment services could require to integrate native SDKs provided by the vendor itself, making it easy to add payments to mobile apps. For example PayPal provides an iOS SDK (https://github.com/paypal/PayPal-iOS-SDK) which offers usability and user experience consistency through native components.
 
 ## Design/interface
 
