@@ -11,20 +11,17 @@ iFrames are made for embedding other websites in your site (e.g. embedding codep
 
 Application issues
 
-- - messages can't exit the iframe, harder for components to talk to each other
-- - events don't bubble out
-- - state management is difficult or impossible
-- - session and cookie management/sharing is different across browsers -> very difficult to manage country exceptions / translations / user saved settings inside the iframe
+- - events don't bubble out ot the iframe, harder for components to talk to each other
+- - state management is difficult or impossible 
+- - session and cookie management/sharing is different across browsers -> very difficult to manage country exceptions / translations / user saved settings inside the iframe 
 - - general increased complexity
-- - can js talk to other frames? **TBV**
 
 ## Design/interface
 
-- - css of parent website is not inherited from the iframe -> very hard to make the content look exactly like other content in the website
+- - css of parent website is not inherited from the iframe -> very hard to seamlessly integrate content of iframe
 - - responsive design is extremely difficult because each frame is a new viewport and media queries won't match
 - - hindered design flexibility if submit button is inside the iframe
 - - iframe must have a width and a height, content that overflows will scroll, content that is smaller will leave space
-- - create a new scroll area
 
 ## Performance
 
@@ -35,7 +32,7 @@ Application issues
 
 ## Accessibility
 
-- - keyboard interaction is impossible if submit button is outside the iframe
+- - keyboard interaction is harder if submit button is outside the iframe
 - - non-semantic
 
 # Conclusion
